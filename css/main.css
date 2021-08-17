@@ -15,4 +15,45 @@ Grey dark 2: #777
 Grey dark 3: #999
 
 */
+.custom-bg::before {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(var(--dui-primary-lighten-3)), to(var(--dui-primary-darken-3)));
+  background-image: linear-gradient(to right bottom, var(--dui-primary-lighten-3), var(--dui-primary-darken-3));
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content-container {
+  max-width: 70rem;
+  margin: 8rem auto;
+  background-color: RGB(var(--dui-scheme));
+  -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  min-height: 30rem;
+}
+
+.header {
+  height: 5rem;
+  background-color: white;
+  border-bottom: 1px solid var(--dui-base-mute);
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.sidebar {
+  background-color: var(--dui-base-mute);
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 18%;
+          flex: 0 0 18%;
+}
+
+.hotel-view {
+  background-color: white;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
 /*# sourceMappingURL=main.css.map */

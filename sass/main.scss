@@ -15,3 +15,38 @@ Grey dark 2: #777
 Grey dark 3: #999
 
 */
+
+.custom-bg::before {
+        // prettier-ignore
+        background-image: linear-gradient(to right bottom, var(--dui-primary-lighten-3), var(--dui-primary-darken-3));
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+
+.content-container {
+        max-width: 70rem;
+        margin: 8rem auto; // center ver & hor
+        background-color: RGB(var(--dui-scheme));
+        box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+        min-height: 30rem;
+}
+
+.header {
+        height: 5rem;
+        background-color: white;
+        border-bottom: 1px solid var(--dui-base-mute);
+}
+
+.content {
+        display: flex;
+}
+
+.sidebar {
+        background-color: var(--dui-base-mute);
+        flex: 0 0 18%;
+}
+
+.hotel-view {
+        background-color: white;
+        flex-grow: 1;
+}
