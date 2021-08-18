@@ -33,6 +33,24 @@ Head('trillo')
                                 </button>
                         </form>
 
+                        <nav class="user-nav">
+                                <div class="user-nav__icon-box">
+                                        <svg class="user-nav__icon">
+                                                <use href="img/sprite.svg#icon-bookmark"></use>
+                                        </svg>
+                                        <span class="user-nav__notification">7</span>
+                                </div>
+                                <div class="user-nav__icon-box">
+                                        <svg class="user-nav__icon">
+                                                <use href="img/sprite.svg#icon-chat"></use>
+                                        </svg>
+                                        <span class="user-nav__notification">13</span>
+                                </div>
+                                <div class="user-nav__user">
+                                        <img src="img/user.jpg" alt="User photo" class="user-nav__user-photo">
+                                        <span class="user-nav__username">enginoobz</span>
+                                </div>
+                        </nav>
 
                 </header>
                 <!-- HEADER END -->
