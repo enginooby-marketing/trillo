@@ -29,12 +29,7 @@ Grey dark 3: #999
         background-color: RGB(var(--dui-scheme));
         box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
         min-height: 30rem;
-}
-
-.header {
-        height: 5rem;
-        background-color: white;
-        border-bottom: 1px solid var(--dui-base-mute);
+        border-radius: var(--dui-border-radius);
 }
 
 .content {
@@ -49,4 +44,69 @@ Grey dark 3: #999
 .hotel-view {
         background-color: white;
         flex-grow: 1;
+}
+
+///////////////////////////
+//     HEADER
+.header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+        background-color: white;
+        border-bottom: 1px solid var(--dui-base-mute);
+}
+
+.logo {
+        height: 2.5rem;
+        margin-left: 2rem;
+}
+
+.input-wrapper {
+        flex: 0 0 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .input {
+                &__field {
+                        color: var(--dui-base);
+                        background-color: RGB(var(--dui-scheme));
+                        border-radius: calc(var(--dui-border-radius) * 2);
+                        border: none;
+                        padding: 0.3rem 1rem;
+                        width: 90%;
+                        height: 2.5rem;
+                        transition: all 0.2s;
+                        margin-right: -2.5rem;
+                        &:focus {
+                                outline: none;
+                                width: 100%;
+                        }
+                        &::-webkit-input-placeholder {
+                                color: var(--dui-base-mute);
+                        }
+                }
+
+                &__btn {
+                        border: none;
+                        background-color: transparent;
+                        &:active {
+                                transform: translateY(2px);
+                        }
+                }
+                &__icon {
+                        width: 1.5rem;
+                        height: 2.5rem;
+                        fill: var(--dui-base-mute);
+                }
+        }
+}
+
+.user-nav {
+        background-color: aqua;
+        svg {
+                width: 1.2rem;
+                height: 1.2rem;
+        }
 }

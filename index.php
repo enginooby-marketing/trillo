@@ -18,9 +18,24 @@ Head('trillo')
                 </div>
         </div> -->
         <div class="content-container">
+                <!-- HEADER -->
                 <header class="header">
-                        Header
+                        <img src="img/logo.png" alt="trillo logo" class="logo">
+
+                        <!-- TODO - DUI: Input component for Material/Flat style  -->
+                        <!-- Flexbox -->
+                        <form action="javascript:'" class="input-wrapper search-box">
+                                <input type="text" class="input__field" placeholder="Search hotels">
+                                <button class="input__btn">
+                                        <svg class="input__icon">
+                                                <use href="img/sprite.svg#icon-magnifying-glass"></use>
+                                        </svg>
+                                </button>
+                        </form>
+
+
                 </header>
+                <!-- HEADER END -->
                 <div class="content">
                         <nav class="sidebar">
                                 Nav
