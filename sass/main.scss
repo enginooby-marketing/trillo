@@ -1,17 +1,10 @@
 @import "../../../dui/scss/abstracts/mixins";
 @import "../../../dui/scss/abstracts/functions";
-
-$color-primary: var(--dui-color-primary);
-// prettier-ignore
-// $scheme-distinct: lightness(--dui-color-scheme, var(--flat-scheme-distinct-intensity));
-$color-header: var(--dui-color-primary-contrast);
-$color-search-box: var(--dui-color-scheme);
+@import "../../../dui/scss/abstracts/colors";
 
 .custom-bg::before {
-        $color-primary-light-3: lightness(--dui-color-primary, 15%);
-        $color-primary-dark-3: lightness(--dui-color-primary, -15%);
         // prettier-ignore
-        background-image: linear-gradient(to right bottom, $color-primary-light-3, $color-primary-dark-3);
+        background-image: linear-gradient(to right bottom, $cpl-15, $cpd-15);
         background-size: cover;
         background-repeat: no-repeat;
 }
@@ -33,7 +26,7 @@ $color-search-box: var(--dui-color-scheme);
         justify-content: space-between;
         align-items: center;
         height: 5rem;
-        background-color: $color-header;
+        background-color: $cpc;
 }
 
 .logo {
@@ -49,8 +42,8 @@ $color-search-box: var(--dui-color-scheme);
 
         .input {
                 &__field {
-                        color: var(--dui-color-scheme-contrast);
-                        background-color: $color-search-box;
+                        color: $csc;
+                        background-color: $cs;
                         border-radius: calc(var(--dui-border-radius) * 2);
                         border: none;
                         padding: 0.3rem 1rem;
@@ -64,7 +57,7 @@ $color-search-box: var(--dui-color-scheme);
                         }
                         &::-webkit-input-placeholder {
                                 // prettier-ignore
-                                color: mute-contrast(--dui-color-scheme-contrast, 40%);
+                                color:$cscm-20;
                         }
                 }
 
@@ -78,7 +71,7 @@ $color-search-box: var(--dui-color-scheme);
                 &__icon {
                         width: 1.5rem;
                         height: 2.5rem;
-                        fill: mute-contrast(--dui-color-scheme-contrast, 20%);
+                        fill: $cscm-20;
                 }
         }
 }
@@ -95,7 +88,7 @@ $color-search-box: var(--dui-color-scheme);
                 display: flex;
                 align-items: center;
                 &:hover {
-                        background-color: $color-search-box;
+                        background-color: $cs;
                 }
         }
 
@@ -105,15 +98,15 @@ $color-search-box: var(--dui-color-scheme);
         &__icon {
                 width: 1.2rem;
                 height: 1.2rem;
-                fill: mute-contrast(--dui-color-scheme-contrast, 30%);
+                fill: $cscm-20;
         }
         &__notification {
                 font-size: 0.7rem;
                 width: 1.1rem;
                 height: 1.1rem;
                 border-radius: 50%;
-                background-color: var(--dui-color-primary);
-                color: var(--dui-color-primary-contrast);
+                background-color: $cp;
+                color: $cpc;
                 position: absolute;
                 top: 1.1rem;
                 right: 0.5rem;
@@ -138,7 +131,7 @@ $color-search-box: var(--dui-color-scheme);
 }
 
 .sidebar {
-        background-color: mute-contrast(--dui-color-scheme-contrast, 15%);
+        background-color: $cscm-15;
         flex: 0 0 18%;
         height: 50rem;
         display: flex;
@@ -161,7 +154,7 @@ $color-search-box: var(--dui-color-scheme);
         &__link:link,
         &__link:visited {
                 text-transform: uppercase;
-                color: var(--dui-color-scheme);
+                color: $cs;
                 transition: color 1s;
                 display: block;
                 padding: 1rem 2rem;
@@ -171,8 +164,9 @@ $color-search-box: var(--dui-color-scheme);
                 position: relative; // z-index requires position
         }
 
-        &__link:hover {
-                color: var(--dui-color-primary-contrast);
+        &__link:hover,
+        &__item--active > &__link {
+                color: $cpc;
         }
 
         &__item {
@@ -188,7 +182,7 @@ $color-search-box: var(--dui-color-scheme);
                         @include abs_pos();
                         height: 100%;
                         width: 5px;
-                        background-color: var(--dui-color-primary);
+                        background-color: $cp;
                         transform: scaleY(0);
                 }
                 &:hover::before,
@@ -197,13 +191,13 @@ $color-search-box: var(--dui-color-scheme);
                         transform: scaleY(1);
                 }
                 &:active::before {
-                        background-color: lightness(--dui-color-primary, 3%);
+                        background-color: $cpl-5;
                 }
         }
 }
 
 .legal {
-        color: var(--dui-color-scheme);
+        color: $cs;
         text-align: center;
         font-size: 1rem;
 }
@@ -212,7 +206,7 @@ $color-search-box: var(--dui-color-scheme);
       MAIN CONTENT
 -------------------------*/
 .hotel-view {
-        background-color: var(--dui-color-scheme);
+        background-color: $cs;
         flex-grow: 1;
 }
 

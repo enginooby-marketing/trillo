@@ -82,7 +82,7 @@
 }
 
 .input-wrapper .input__field::-webkit-input-placeholder {
-  color: hsl(0, 0%, calc((var(--dui-color-scheme-contrast-l) / 100 * (-2) * 40 + 40% + var(--dui-color-scheme-contrast-l))));
+  color: hsl(0, 0%, calc((var(--dui-color-scheme-contrast-l) / 100 * (-2) * 20 + 20% + var(--dui-color-scheme-contrast-l))));
 }
 
 .input-wrapper .input__btn {
@@ -135,7 +135,7 @@
 .user-nav__icon {
   width: 1.2rem;
   height: 1.2rem;
-  fill: hsl(0, 0%, calc((var(--dui-color-scheme-contrast-l) / 100 * (-2) * 30 + 30% + var(--dui-color-scheme-contrast-l))));
+  fill: hsl(0, 0%, calc((var(--dui-color-scheme-contrast-l) / 100 * (-2) * 20 + 20% + var(--dui-color-scheme-contrast-l))));
 }
 
 .user-nav__notification {
@@ -223,7 +223,8 @@
   position: relative;
 }
 
-.side-nav__link:hover {
+.side-nav__link:hover,
+.side-nav__item--active > .side-nav__link {
   color: var(--dui-color-primary-contrast);
 }
 
@@ -260,7 +261,7 @@
 }
 
 .side-nav__item:active::before {
-  background-color: hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + 3%));
+  background-color: hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + 5%));
 }
 
 .legal {
