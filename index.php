@@ -73,6 +73,7 @@ Head('trillo')
       </nav>
       <!-- MAIN CONTENT -->
       <main class="hotel-view">
+        <!-- GALLERY -->
         <div class="gallery">
           <figure class="gallery__item">
             <img src="img/hotel-1.jpg" alt="Photo of hotel 1" class="gallery__photo">
@@ -84,6 +85,7 @@ Head('trillo')
             <img src="img/hotel-3.jpg" alt="Photo of hotel 3" class="gallery__photo">
           </figure>
         </div>
+        <!-- OVERVIEW -->
       </main>
     </div>
   </div>
@@ -97,14 +99,14 @@ function NavItem($label, $icon, $isActive = false)
 {
   $activeClass = $isActive ? "side-nav__item--active" : "";
   echo "
-        <li class='side-nav__item $activeClass'>
-                <a href='javascript:' class='side-nav__link'>
-                        <svg class='side-nav__icon'>
-                                <use href='img/sprite.svg#$icon'></use>
-                        </svg>
-                        <span>$label</span>
-                </a>
-        </li>
-        ";
+  <li class='side-nav__item $activeClass'>
+    <a href='javascript:' class='side-nav__link'>
+      <svg class='side-nav__icon'>
+        <use href='img/sprite.svg#$icon'></use>
+      </svg>
+      <span>$label</span>
+    </a>
+  </li>
+  ";
 }
 ?>
