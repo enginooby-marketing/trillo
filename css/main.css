@@ -11,8 +11,38 @@
      To append additional effect w/o extra div
 -------------------------*/
 .custom-bg::before {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + 15%))), to(hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + -15%))));
-  background-image: linear-gradient(to right bottom, hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + 15%)), hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + -15%)));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right bottom,
+    from(
+      hsl(
+        var(--dui-color-primary-h),
+        var(--dui-color-primary-s),
+        calc(var(--dui-color-primary-l) + 15%)
+      )
+    ),
+    to(
+      hsl(
+        var(--dui-color-primary-h),
+        var(--dui-color-primary-s),
+        calc(var(--dui-color-primary-l) + -15%)
+      )
+    )
+  );
+  background-image: linear-gradient(
+    to right bottom,
+    hsl(
+      var(--dui-color-primary-h),
+      var(--dui-color-primary-s),
+      calc(var(--dui-color-primary-l) + 15%)
+    ),
+    hsl(
+      var(--dui-color-primary-h),
+      var(--dui-color-primary-s),
+      calc(var(--dui-color-primary-l) + -15%)
+    )
+  );
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -21,7 +51,7 @@
   max-width: 70rem;
   margin: 8rem auto;
   -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   min-height: 30rem;
   border-radius: var(--dui-border-radius);
 }
@@ -34,11 +64,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 5rem;
   background-color: var(--dui-color-primary-contrast);
 }
@@ -50,17 +80,17 @@
 
 .input-wrapper {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 40%;
-          flex: 0 0 40%;
+  -ms-flex: 0 0 40%;
+  flex: 0 0 40%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .input-wrapper .input__field {
@@ -82,7 +112,16 @@
 }
 
 .input-wrapper .input__field::-webkit-input-placeholder {
-  color: hsl(0, 0%, calc((var(--dui-color-scheme-contrast-l) / 100 * (-2) * 20 + 20% + var(--dui-color-scheme-contrast-l))));
+  color: hsl(
+    0,
+    0%,
+    calc(
+      (
+        var(--dui-color-scheme-contrast-l) / 100 * (-2) * 20 + 20% +
+          var(--dui-color-scheme-contrast-l)
+      )
+    )
+  );
 }
 
 .input-wrapper .input__btn {
@@ -92,13 +131,22 @@
 
 .input-wrapper .input__btn:active {
   -webkit-transform: translateY(2px);
-          transform: translateY(2px);
+  transform: translateY(2px);
 }
 
 .input-wrapper .input__icon {
   width: 1.5rem;
   height: 2.5rem;
-  fill: hsl(0, 0%, calc((var(--dui-color-scheme-contrast-l) / 100 * (-2) * 20 + 20% + var(--dui-color-scheme-contrast-l))));
+  fill: hsl(
+    0,
+    0%,
+    calc(
+      (
+        var(--dui-color-scheme-contrast-l) / 100 * (-2) * 20 + 20% +
+          var(--dui-color-scheme-contrast-l)
+      )
+    )
+  );
 }
 
 .user-nav {
@@ -106,10 +154,10 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-item-align: stretch;
-      align-self: stretch;
+  align-self: stretch;
 }
 
 .user-nav > * {
@@ -120,8 +168,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .user-nav > *:hover {
@@ -135,7 +183,16 @@
 .user-nav__icon {
   width: 1.2rem;
   height: 1.2rem;
-  fill: hsl(0, 0%, calc((var(--dui-color-scheme-contrast-l) / 100 * (-2) * 20 + 20% + var(--dui-color-scheme-contrast-l))));
+  fill: hsl(
+    0,
+    0%,
+    calc(
+      (
+        var(--dui-color-scheme-contrast-l) / 100 * (-2) * 20 + 20% +
+          var(--dui-color-scheme-contrast-l)
+      )
+    )
+  );
 }
 
 .user-nav__notification {
@@ -152,11 +209,11 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .user-nav__user-photo {
@@ -176,21 +233,30 @@
 }
 
 .sidebar {
-  background-color: hsl(0, 0%, calc((var(--dui-color-scheme-contrast-l) / 100 * (-2) * 15 + 15% + var(--dui-color-scheme-contrast-l))));
+  background-color: hsl(
+    0,
+    0%,
+    calc(
+      (
+        var(--dui-color-scheme-contrast-l) / 100 * (-2) * 15 + 15% +
+          var(--dui-color-scheme-contrast-l)
+      )
+    )
+  );
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 18%;
-          flex: 0 0 18%;
+  -ms-flex: 0 0 18%;
+  flex: 0 0 18%;
   height: 50rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-top: 2rem;
 }
 
@@ -206,7 +272,8 @@
   margin-right: 1rem;
 }
 
-.side-nav__link:link, .side-nav__link:visited {
+.side-nav__link:link,
+.side-nav__link:visited {
   text-transform: uppercase;
   color: var(--dui-color-scheme);
   -webkit-transition: color 1s;
@@ -217,8 +284,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   z-index: 10;
   position: relative;
 }
@@ -237,10 +304,14 @@
 }
 
 .side-nav__item::before {
-  -webkit-transition: width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, -webkit-transform 0.2s;
-  transition: width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, -webkit-transform 0.2s;
-  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s;
-  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s, -webkit-transform 0.2s;
+  -webkit-transition: width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+    background-color 0.1s, -webkit-transform 0.2s;
+  transition: width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s, background-color 0.1s,
+    -webkit-transform 0.2s;
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+    background-color 0.1s;
+  transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+    background-color 0.1s, -webkit-transform 0.2s;
   content: "";
   position: absolute;
   top: 0;
@@ -251,17 +322,22 @@
   width: 5px;
   background-color: var(--dui-color-primary);
   -webkit-transform: scaleY(0);
-          transform: scaleY(0);
+  transform: scaleY(0);
 }
 
-.side-nav__item:hover::before, .side-nav__item--active::before {
+.side-nav__item:hover::before,
+.side-nav__item--active::before {
   width: 100%;
   -webkit-transform: scaleY(1);
-          transform: scaleY(1);
+  transform: scaleY(1);
 }
 
 .side-nav__item:active::before {
-  background-color: hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + 5%));
+  background-color: hsl(
+    var(--dui-color-primary-h),
+    var(--dui-color-primary-s),
+    calc(var(--dui-color-primary-l) + 5%)
+  );
 }
 
 .legal {
@@ -276,8 +352,8 @@
 .hotel-view {
   background-color: var(--dui-color-scheme);
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .gallery {
