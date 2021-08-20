@@ -53,10 +53,23 @@ Head('trillo')
                         </nav>
 
                 </header>
-                <!-- HEADER END -->
+
+                <!-- SIDEBAR -->
                 <div class="content">
                         <nav class="sidebar">
-                                Nav
+                                <ul class="side-nav">
+                                        <li class="side-nav__item">
+                                                <?php
+                                                NavItem("Hotel", "icon-home", isActive: true);
+                                                NavItem("Flight", "icon-aircraft-take-off");
+                                                NavItem("Car rental", "icon-key");
+                                                NavItem("Tours", "icon-map");
+                                                ?>
+                                        </li>
+                                </ul>
+                                <div class="legal">
+                                        &copy;2021 by trillo. All rights reserved.
+                                </div>
                         </nav>
                         <main class="hotel-view">
                                 View
@@ -67,3 +80,20 @@ Head('trillo')
 </body>
 
 </html>
+
+<?php
+function NavItem($label, $icon, $isActive = false)
+{
+        $activeClass = $isActive ? "side-nav__item--active" : "";
+        echo "
+        <li class='side-nav__item $activeClass'>
+                <a href='javascript:' class='side-nav__link'>
+                        <svg class='side-nav__icon'>
+                                <use href='img/sprite.svg#$icon'></use>
+                        </svg>
+                        <span>$label</span>
+                </a>
+        </li>
+        ";
+}
+?>

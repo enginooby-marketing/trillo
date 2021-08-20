@@ -182,7 +182,8 @@ $color-search-box: var(--dui-color-scheme);
                 }
                 &::before {
                         transition: transform 0.2s,
-                                width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
+                                width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+                                background-color 0.1s;
                         content: "";
                         @include abs_pos();
                         height: 100%;
@@ -190,9 +191,13 @@ $color-search-box: var(--dui-color-scheme);
                         background-color: var(--dui-color-primary);
                         transform: scaleY(0);
                 }
-                &:hover::before {
+                &:hover::before,
+                &--active::before {
                         width: 100%;
                         transform: scaleY(1);
+                }
+                &:active::before {
+                        background-color: lightness(--dui-color-primary, 3%);
                 }
         }
 }
