@@ -115,6 +115,41 @@ Head('trillo')
             <div class="overview__rating-count">429 views</div>
           </div>
         </div>
+        <!-- DETAIL -->
+        <div class="detail">
+          <div class="description">
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </p>
+            <ul class="list">
+              <li class="list__item">Close to the beach</li>
+              <li class="list__item">Breakfast included</li>
+              <li class="list__item">Free airport shttle</li>
+              <li class="list__item">Free wifi in all rooms</li>
+              <li class="list__item">Air conditioning and heating</li>
+              <li class="list__item">Pets allowed</li>
+              <li class="list__item">We speak all languages</li>
+              <li class="list__item">Perfect for families</li>
+            </ul>
+            <div class="recommend">
+              <p class="recommend__count">
+                Lucy and 3 other friends recommend this hotel.
+              </p>
+              <div class="recommend__friends">
+                <img src="img/user-3.jpg" alt="Friend 1" class="recommend__photo">
+                <img src="img/user-4.jpg" alt="Friend 2" class="recommend__photo">
+                <img src="img/user-5.jpg" alt="Friend 3" class="recommend__photo">
+                <img src="img/user-6.jpg" alt="Friend 4" class="recommend__photo">
+              </div>
+            </div>
+          </div>
+          <div class="user-reviews">
+            Reviews
+          </div>
+        </div>
       </main>
     </div>
   </div>
