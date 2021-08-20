@@ -208,7 +208,18 @@ $color-search-box: var(--dui-color-scheme);
         font-size: 1rem;
 }
 
+/*-------------------------
+      MAIN CONTENT
+-------------------------*/
 .hotel-view {
         background-color: var(--dui-color-scheme);
         flex-grow: 1;
+}
+
+.gallery {
+        display: flex;
+        &__photo {
+                display: block;
+                width: 100%;
+        }
 }

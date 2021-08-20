@@ -54,8 +54,8 @@ Head('trillo')
 
                 </header>
 
-                <!-- SIDEBAR -->
                 <div class="content">
+                        <!-- SIDEBAR -->
                         <nav class="sidebar">
                                 <ul class="side-nav">
                                         <li class="side-nav__item">
@@ -71,8 +71,19 @@ Head('trillo')
                                         &copy;2021 by trillo. All rights reserved.
                                 </div>
                         </nav>
+                        <!-- MAIN CONTENT -->
                         <main class="hotel-view">
-                                View
+                                <div class="gallery">
+                                        <figure class="gallery__item">
+                                                <img src="img/hotel-1.jpg" alt="Photo of hotel 1" class="gallery__photo">
+                                        </figure>
+                                        <figure class="gallery__item">
+                                                <img src="img/hotel-2.jpg" alt="Photo of hotel 2" class="gallery__photo">
+                                        </figure>
+                                        <figure class="gallery__item">
+                                                <img src="img/hotel-3.jpg" alt="Photo of hotel 3" class="gallery__photo">
+                                        </figure>
+                                </div>
                         </main>
                 </div>
         </div>

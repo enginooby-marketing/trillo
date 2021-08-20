@@ -269,10 +269,24 @@
   font-size: 1rem;
 }
 
+/*-------------------------
+      MAIN CONTENT
+-------------------------*/
 .hotel-view {
   background-color: var(--dui-color-scheme);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery__photo {
+  display: block;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
