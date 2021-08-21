@@ -269,33 +269,6 @@ $shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
   }
 }
 
-.btn-inline {
-  border: none;
-  background-color: transparent;
-  color: $cp;
-  margin-right: 1.3rem;
-  margin-left: 0.2rem;
-  font-size: inherit;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 1.5px;
-  display: inline-block;
-  transition: all 0.2s;
-  span {
-    margin-left: 3px;
-    transition: margin-left 0.2s;
-  }
-
-  &:hover {
-    color: $cscm-15;
-    animation: pulse;
-    animation-duration: 0.8s;
-    animation-iteration-count: infinite;
-    span {
-      margin-left: 8px;
-    }
-  }
-}
-
 .detail {
   // font-size: 1.25rem;
   display: flex;
@@ -427,5 +400,94 @@ $shadow-light: 0 2rem 5rem rgba(0, 0, 0, 0.06);
     height: 4.75rem;
     border-radius: 50%;
     margin-right: 1rem;
+  }
+}
+
+// CTA //
+.cta {
+  // border-radius: var(--dui-border-radius);
+  background-color: $csl-20;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__book-now {
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    color: $cscm-35;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.btn-inline {
+  border: none;
+  background-color: transparent;
+  color: $cp;
+  margin-right: 1.3rem;
+  margin-left: 0.2rem;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1.5px;
+  display: inline-block;
+  transition: all 0.2s;
+  span {
+    margin-left: 3px;
+    transition: margin-left 0.2s;
+  }
+
+  &:hover {
+    color: $cscm-15;
+    animation: pulse 0.8s infinite;
+    span {
+      margin-left: 8px;
+    }
+  }
+}
+
+.btn {
+  font-size: 1.2rem;
+  background-image: linear-gradient(to right, $cpl-10, $cpd-10);
+  color: $cpc;
+  border-radius: calc(var(--dui-border-radius) * 3);
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+
+  &:hover {
+    background-image: linear-gradient(to left, $cpl-10, $cpd-10);
+    animation: pulse 0.8s infinite 0.3s;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+  & > * {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    transition: all 0.2s;
+    color: $cpc;
+  }
+
+  &__visible {
+    padding: 0.5rem 2rem;
+  }
+
+  &__invisible {
+    padding: 1rem 0rem;
+    position: absolute;
+    left: 0;
+    top: -100%;
+  }
+
+  &:hover &__invisible {
+    top: 0;
+  }
+  &:hover &__visible {
+    transform: translateY(100%);
   }
 }

@@ -364,40 +364,6 @@
   font-size: 1rem;
 }
 
-.btn-inline {
-  border: none;
-  background-color: transparent;
-  color: var(--dui-color-primary);
-  margin-right: 1.3rem;
-  margin-left: 0.2rem;
-  font-size: inherit;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 1.5px;
-  display: inline-block;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.btn-inline span {
-  margin-left: 3px;
-  -webkit-transition: margin-left 0.2s;
-  transition: margin-left 0.2s;
-}
-
-.btn-inline:hover {
-  color: hsl(0, 0%, calc((var(--dui-color-scheme-contrast-l) / 100 * (-2) * 15 + 15% + var(--dui-color-scheme-contrast-l))));
-  -webkit-animation: pulse;
-          animation: pulse;
-  -webkit-animation-duration: 0.8s;
-          animation-duration: 0.8s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-}
-
-.btn-inline:hover span {
-  margin-left: 8px;
-}
-
 .detail {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -584,5 +550,113 @@
   height: 4.75rem;
   border-radius: 50%;
   margin-right: 1rem;
+}
+
+.cta {
+  background-color: hsl(var(--dui-color-scheme-h), var(--dui-color-scheme-s), calc(var(--dui-color-scheme-l) + 20%));
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cta__book-now {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  color: hsl(0, 0%, calc((var(--dui-color-scheme-contrast-l) / 100 * (-2) * 35 + 35% + var(--dui-color-scheme-contrast-l))));
+  margin-bottom: 1.5rem;
+}
+
+.btn-inline {
+  border: none;
+  background-color: transparent;
+  color: var(--dui-color-primary);
+  margin-right: 1.3rem;
+  margin-left: 0.2rem;
+  font-size: inherit;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 1.5px;
+  display: inline-block;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn-inline span {
+  margin-left: 3px;
+  -webkit-transition: margin-left 0.2s;
+  transition: margin-left 0.2s;
+}
+
+.btn-inline:hover {
+  color: hsl(0, 0%, calc((var(--dui-color-scheme-contrast-l) / 100 * (-2) * 15 + 15% + var(--dui-color-scheme-contrast-l))));
+  -webkit-animation: pulse 0.8s infinite;
+          animation: pulse 0.8s infinite;
+}
+
+.btn-inline:hover span {
+  margin-left: 8px;
+}
+
+.btn {
+  font-size: 1.2rem;
+  background-image: -webkit-gradient(linear, left top, right top, from(hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + 10%))), to(hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + -10%))));
+  background-image: linear-gradient(to right, hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + 10%)), hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + -10%)));
+  color: var(--dui-color-primary-contrast);
+  border-radius: calc(var(--dui-border-radius) * 3);
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn:hover {
+  background-image: -webkit-gradient(linear, right top, left top, from(hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + 10%))), to(hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + -10%))));
+  background-image: linear-gradient(to left, hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + 10%)), hsl(var(--dui-color-primary-h), var(--dui-color-primary-s), calc(var(--dui-color-primary-l) + -10%)));
+  -webkit-animation: pulse 0.8s infinite 0.3s;
+          animation: pulse 0.8s infinite 0.3s;
+}
+
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.btn > * {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: var(--dui-color-primary-contrast);
+}
+
+.btn__visible {
+  padding: 0.5rem 2rem;
+}
+
+.btn__invisible {
+  padding: 1rem 0rem;
+  position: absolute;
+  left: 0;
+  top: -100%;
+}
+
+.btn:hover .btn__invisible {
+  top: 0;
+}
+
+.btn:hover .btn__visible {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 /*# sourceMappingURL=main.css.map */

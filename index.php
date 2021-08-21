@@ -176,6 +176,16 @@ Head('trillo')
             <button class="btn-inline">Show all <span>&rarr;</span></button>
           </figure>
         </div>
+        <!-- CTA -->
+        <div class="cta">
+          <h2 class="cta__book-now">
+            Good news! We have 4 free rooms for your selected dates!
+          </h2>
+          <button class="btn">
+            <span class="btn__invisible">Book now</span>
+            <span class="btn__visible">Only 4 rooms left</span>
+          </button>
+        </div>
       </main>
     </div>
   </div>
