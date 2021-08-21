@@ -115,8 +115,8 @@ Head('trillo')
             <div class="overview__rating-count">429 views</div>
           </div>
         </div>
-        <!-- DETAIL -->
         <div class="detail">
+          <!-- DESCRIPTION -->
           <div class="description">
             <p class="paragraph">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -146,9 +146,35 @@ Head('trillo')
               </div>
             </div>
           </div>
-          <div class="user-reviews">
-            Reviews
-          </div>
+          <!-- REVIEW -->
+          <figure class="user-reviews">
+            <figure class="review">
+              <blockquote class="review__text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              </blockquote>
+              <figcaption class="review__user">
+                <img src="img/user-1.jpg" alt="User 1" class="review__photo">
+                <div class="review__user-box">
+                  <p class="review__user-name">Nick Smith</p>
+                  <p class="review__user-date">Feb 23rd, 2021</p>
+                </div>
+                <div class="review__rating">6.9</div>
+              </figcaption>
+            </figure>
+            <figure class="review">
+              <blockquote class="review__text">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </blockquote>
+              <figcaption class="review__user">
+                <img src="img/user-2.jpg" alt="User 2" class="review__photo">
+                <div class="review__user-box">
+                  <p class="review__user-name">Mary Thomas</p>
+                  <p class="review__user-date">Sept 12nd, 2021</p>
+                </div>
+                <div class="review__rating">8.1</div>
+              </figcaption>
+            </figure>
+            <button class="btn-inline">Show all <span>&rarr;</span></button>
+          </figure>
         </div>
       </main>
     </div>
