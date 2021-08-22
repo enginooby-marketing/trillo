@@ -10,7 +10,7 @@ Head('trillo')
   ->show();
 ?>
 
-<body class="flat-style custom-bg">
+<body class="neu-style fcustom-bg">
   <!-- <div class="display-table">
                 <div class="display-content ">
                         <section class="container">
@@ -56,21 +56,16 @@ Head('trillo')
 
     <div class="content">
       <!-- SIDEBAR -->
-      <nav class="sidebar">
-        <ul class="side-nav">
-          <li class="side-nav__item">
-            <?php
-            NavItem("Hotel", "icon-home", isActive: true);
-            NavItem("Flight", "icon-aircraft-take-off");
-            NavItem("Car rental", "icon-key");
-            NavItem("Tours", "icon-map");
-            ?>
-          </li>
-        </ul>
-        <div class="legal">
-          &copy;2021 by trillo. All rights reserved.
-        </div>
-      </nav>
+      <?php
+      $sprite = "img/sprite.svg";
+      Sidebar()
+        ->Item(label: "Hotel", icon: "$sprite#icon-home", isActive: true)
+        ->Item(label: "Flight", icon: "$sprite#icon-aircraft-take-off")
+        ->Item(label: "Car rental", icon: "$sprite#icon-key")
+        ->Item(label: "Tours", icon: "$sprite#icon-map")
+        ->show();
+      ?>
+
       <!-- MAIN CONTENT -->
       <main class="hotel-view">
         <!-- GALLERY -->
@@ -193,20 +188,3 @@ Head('trillo')
 </body>
 
 </html>
-
-<?php
-function NavItem($label, $icon, $isActive = false)
-{
-  $activeClass = $isActive ? "side-nav__item--active" : "";
-  echo "
-  <li class='side-nav__item $activeClass'>
-    <a href='javascript:' class='side-nav__link'>
-      <svg class='side-nav__icon'>
-        <use href='img/sprite.svg#$icon'></use>
-      </svg>
-      <span>$label</span>
-    </a>
-  </li>
-  ";
-}
-?>
